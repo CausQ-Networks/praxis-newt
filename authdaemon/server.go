@@ -18,7 +18,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/fosrl/newt/logger"
+	"github.com/CausQ-Networks/praxis-newt/logger"
 )
 
 type Config struct {

@@ -5,7 +5,7 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/fosrl/newt/internal/telemetry"
+	"github.com/CausQ-Networks/praxis-newt/internal/telemetry"
 )
 
 // TelemetryView is a minimal, thread-safe implementation to feed observables.

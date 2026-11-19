@@ -19,12 +19,12 @@ import (
 
 	"software.sslmate.com/src/go-pkcs12"
 
-	"github.com/fosrl/newt/logger"
+	"github.com/CausQ-Networks/praxis-newt/logger"
 	"github.com/gorilla/websocket"
 
 	"context"
 
-	"github.com/fosrl/newt/internal/telemetry"
+	"github.com/CausQ-Networks/praxis-newt/internal/telemetry"
 	"go.opentelemetry.io/otel"
 )
 

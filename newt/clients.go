@@ -3,9 +3,9 @@ package newt
 import (
 	"strings"
 
-	wgnetstack "github.com/fosrl/newt/clients"
-	"github.com/fosrl/newt/clients/permissions"
-	"github.com/fosrl/newt/logger"
+	wgnetstack "github.com/CausQ-Networks/praxis-newt/clients"
+	"github.com/CausQ-Networks/praxis-newt/clients/permissions"
+	"github.com/CausQ-Networks/praxis-newt/logger"
 	"golang.zx2c4.com/wireguard/tun/netstack"
 )
 

@@ -8,9 +8,9 @@ import (
 	"sync"
 	"time"
 
-	"github.com/fosrl/newt/bind"
-	"github.com/fosrl/newt/logger"
-	"github.com/fosrl/newt/util"
+	"github.com/CausQ-Networks/praxis-newt/bind"
+	"github.com/CausQ-Networks/praxis-newt/logger"
+	"github.com/CausQ-Networks/praxis-newt/util"
 	"golang.org/x/crypto/chacha20poly1305"
 	"golang.org/x/crypto/curve25519"
 	mrand "golang.org/x/exp/rand"
@@ -43,7 +43,7 @@ type Manager struct {
 	// no-ops so no UDP hole punch packet is ever sent - e.g. a user-configured
 	// "disable hole punching" setting must fully suppress outbound hole punch
 	// traffic, not just change what's reported to the server (which is all it
-	// did before - see https://github.com/fosrl/olm/issues/134).
+	// did before - see https://github.com/CausQ-Networks/praxis-olm/issues/134).
 	disabled bool
 
 	sendHolepunchInterval    time.Duration
@@ -310,7 +310,7 @@ func (m *Manager) ResetServerHolepunchInterval() {
 // UDP packets, so trying every candidate costs little and means whichever
 // address family the local network path actually has a route for gets used -
 // e.g. on an IPv6-only/NAT64 network where an IPv4 candidate exists in DNS
-// but has no route at all. See https://github.com/fosrl/olm/issues/108.
+// but has no route at all. See https://github.com/CausQ-Networks/praxis-olm/issues/108.
 func (m *Manager) resolveExitNodeAddrs(exitNode ExitNode) ([]*net.UDPAddr, error) {
 	var hosts []string
 	var err error

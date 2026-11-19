@@ -9,7 +9,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/fosrl/newt/logger"
+	"github.com/CausQ-Networks/praxis-newt/logger"
 )
 
 // oldBinaryPrefix returns the prefix used for previous binaries parked

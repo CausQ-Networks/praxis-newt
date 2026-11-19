@@ -1,10 +1,10 @@
 package newt
 
 import (
-	wgclients "github.com/fosrl/newt/clients"
-	"github.com/fosrl/newt/exitnode"
-	"github.com/fosrl/newt/healthcheck"
-	"github.com/fosrl/newt/netstack2"
+	wgclients "github.com/CausQ-Networks/praxis-newt/clients"
+	"github.com/CausQ-Networks/praxis-newt/exitnode"
+	"github.com/CausQ-Networks/praxis-newt/healthcheck"
+	"github.com/CausQ-Networks/praxis-newt/netstack2"
 )
 
 type BrowserGatewayTarget struct {

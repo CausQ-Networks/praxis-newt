@@ -8,9 +8,9 @@ import (
 	"sync"
 	"time"
 
-	"github.com/fosrl/newt/bind"
-	"github.com/fosrl/newt/logger"
-	"github.com/fosrl/newt/util"
+	"github.com/CausQ-Networks/praxis-newt/bind"
+	"github.com/CausQ-Networks/praxis-newt/logger"
+	"github.com/CausQ-Networks/praxis-newt/util"
 )
 
 // TestResult represents the result of a connection test

@@ -8,7 +8,7 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/fosrl/newt/nativessh"
+	"github.com/CausQ-Networks/praxis-newt/nativessh"
 )
 
 // Forwarding buffer size. RDP graphics traffic is bursty and TLS records cap

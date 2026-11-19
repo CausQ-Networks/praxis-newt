@@ -6,7 +6,7 @@ import (
 	"os"
 	"time"
 
-	"github.com/fosrl/newt/logger"
+	"github.com/CausQ-Networks/praxis-newt/logger"
 )
 
 // Example 1: Using the default logger (works exactly as before)
@@ -130,8 +130,8 @@ func exampleConditionalWriter() {
 
 func exampleOSLogWriter() {
 	osWriter := logger.NewOSLogWriter(
-		"net.pangolin.Pangolin.PacketTunnel",
-		"PangolinGo",
+		"com.causq.praxis.PacketTunnel",
+		"PraxisGo",
 		"MyApp",
 	)
 

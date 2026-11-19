@@ -44,8 +44,8 @@ import "your-project/logger"
 func main() {
     // Create an OS log writer
     osWriter := logger.NewOSLogWriter(
-        "net.pangolin.Pangolin.PacketTunnel",
-        "PangolinGo",
+        "com.causq.praxis.PacketTunnel",
+        "PraxisGo",
         "MyApp",
     )
     

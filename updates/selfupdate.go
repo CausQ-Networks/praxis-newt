@@ -18,12 +18,12 @@ import (
 	"strings"
 	"time"
 
-	"github.com/fosrl/newt/logger"
+	"github.com/CausQ-Networks/praxis-newt/logger"
 )
 
 // SelfUpdateConfig holds the configuration required to perform a self-update.
 type SelfUpdateConfig struct {
-	// Endpoint is the base URL of the pangolin server (e.g. "https://app.pangolin.net")
+	// Endpoint is the base URL of the praxis server (e.g. "https://app.praxis.causq.com")
 	Endpoint string
 	// NewtID is the newt client identifier used for authentication.
 	NewtID string
@@ -115,7 +115,7 @@ func verifySHA256(path, expected string) error {
 	return nil
 }
 
-// CheckAndSelfUpdate contacts the pangolin server, checks whether a newer
+// CheckAndSelfUpdate contacts the praxis server, checks whether a newer
 // version of newt is available, downloads it if so, replaces the running
 // binary on disk, and re-executes from the new binary.
 //

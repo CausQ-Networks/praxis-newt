@@ -7,7 +7,7 @@ import (
 	"os"
 	"unsafe"
 
-	"github.com/fosrl/newt/logger"
+	"github.com/CausQ-Networks/praxis-newt/logger"
 	"golang.org/x/sys/unix"
 )
 

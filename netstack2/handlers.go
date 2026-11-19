@@ -10,7 +10,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/fosrl/newt/logger"
+	"github.com/CausQ-Networks/praxis-newt/logger"
 	"golang.org/x/net/icmp"
 	"golang.org/x/net/ipv4"
 	"gvisor.dev/gvisor/pkg/tcpip"

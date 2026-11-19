@@ -12,7 +12,7 @@ import (
 	"github.com/moby/moby/api/types/container"
 	"github.com/moby/moby/api/types/events"
 	"github.com/moby/moby/client"
-	"github.com/fosrl/newt/logger"
+	"github.com/CausQ-Networks/praxis-newt/logger"
 )
 
 // Container represents a Docker container
@@ -168,10 +168,10 @@ func ListContainers(socketPath string, enforceNetworkValidation bool) ([]Contain
 		socketPath = "unix://" + socketPath
 	}
 
-	// Used to filter down containers returned to Pangolin
+	// Used to filter down containers returned to Praxis
 	containerFilters := make(client.Filters)
 
-	// Used to determine if we will send IP addresses or hostnames to Pangolin
+	// Used to determine if we will send IP addresses or hostnames to Praxis
 	useContainerIpAddresses := true
 	hostContainerId := ""
 

@@ -8,8 +8,8 @@ import (
 	"fmt"
 
 	"github.com/coder/websocket"
-	"github.com/fosrl/newt/logger"
-	"github.com/fosrl/newt/nativessh"
+	"github.com/CausQ-Networks/praxis-newt/logger"
+	"github.com/CausQ-Networks/praxis-newt/nativessh"
 )
 
 // serveNativeSSHSession handles a WebSocket SSH session by authenticating the

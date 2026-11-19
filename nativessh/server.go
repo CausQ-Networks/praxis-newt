@@ -16,7 +16,7 @@ import (
 	"sync"
 	"syscall"
 
-	"github.com/fosrl/newt/logger"
+	"github.com/CausQ-Networks/praxis-newt/logger"
 	"golang.org/x/crypto/ssh"
 )
 

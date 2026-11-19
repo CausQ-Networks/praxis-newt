@@ -1,4 +1,4 @@
-module github.com/fosrl/newt
+module github.com/CausQ-Networks/praxis-newt
 
 go 1.26.0
 

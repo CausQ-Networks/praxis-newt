@@ -3,8 +3,8 @@
 package main
 
 import (
-	"github.com/fosrl/newt/proxy"
-	"github.com/fosrl/newt/websocket"
+	"github.com/CausQ-Networks/praxis-newt/proxy"
+	"github.com/CausQ-Networks/praxis-newt/websocket"
 )
 
 func setupClientsNative(client *websocket.Client, host string) {

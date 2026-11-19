@@ -1,6 +1,6 @@
 MODNAME     := newt
 VERSION     := 1.12.5
-RELEASE_URL := https://github.com/fosrl/newt/releases/download/$(VERSION)
+RELEASE_URL := https://github.com/CausQ-Networks/praxis-newt/releases/download/$(VERSION)
 PLATFORM    ?= v4
 
 # Map Advantech platform to newt release binary name

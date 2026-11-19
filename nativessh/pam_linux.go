@@ -10,7 +10,7 @@ import (
 	"os"
 	"strings"
 
-	"github.com/fosrl/newt/logger"
+	"github.com/CausQ-Networks/praxis-newt/logger"
 	"github.com/go-crypt/crypt"
 	"github.com/go-crypt/x/yescrypt"
 )

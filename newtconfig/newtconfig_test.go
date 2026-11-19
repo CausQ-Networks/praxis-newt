@@ -9,7 +9,7 @@ import (
 func clearNewtEnv(t *testing.T) {
 	t.Helper()
 	for _, k := range []string{
-		"PANGOLIN_ENDPOINT", "NEWT_ID", "NEWT_SECRET", "DNS", "LOG_LEVEL",
+		"PRAXIS_ENDPOINT", "NEWT_ID", "NEWT_SECRET", "DNS", "LOG_LEVEL",
 		"MTU", "CONFIG_FILE", "NEWT_PROVISIONING_KEY", "NEWT_NAME",
 		"DISABLE_SSH", "DISABLE_CLIENTS", "SITE_ID", "SITE_SECRET",
 	} {

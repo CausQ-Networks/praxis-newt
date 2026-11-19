@@ -10,8 +10,8 @@ import (
 	"runtime"
 	"time"
 
-	"github.com/fosrl/newt/internal/telemetry"
-	"github.com/fosrl/newt/logger"
+	"github.com/CausQ-Networks/praxis-newt/internal/telemetry"
+	"github.com/CausQ-Networks/praxis-newt/logger"
 	"golang.org/x/net/icmp"
 	"golang.org/x/net/ipv4"
 	"golang.zx2c4.com/wireguard/tun/netstack"

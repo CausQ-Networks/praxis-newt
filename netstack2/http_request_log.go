@@ -8,7 +8,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/fosrl/newt/logger"
+	"github.com/CausQ-Networks/praxis-newt/logger"
 )
 
 // HTTPRequestLog represents a single HTTP/HTTPS request proxied through the handler.

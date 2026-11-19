@@ -15,7 +15,7 @@ services:
       NEWT_METRICS_OTLP_ENABLED: "false"   # avoid double-scrape by default
       NEWT_ADMIN_ADDR: ":2112"
       # Base NEWT configuration
-      PANGOLIN_ENDPOINT: ${PANGOLIN_ENDPOINT}
+      PRAXIS_ENDPOINT: ${PRAXIS_ENDPOINT}
       NEWT_ID: ${NEWT_ID}
       NEWT_SECRET: ${NEWT_SECRET}
       LOG_LEVEL: "DEBUG"

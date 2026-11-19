@@ -8,8 +8,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/fosrl/newt/logger"
-	"github.com/fosrl/newt/websocket"
+	"github.com/CausQ-Networks/praxis-newt/logger"
+	"github.com/CausQ-Networks/praxis-newt/websocket"
 	"github.com/fsnotify/fsnotify"
 	"gopkg.in/yaml.v3"
 )

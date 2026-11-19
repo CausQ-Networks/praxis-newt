@@ -5,8 +5,8 @@ import (
 	"net/netip"
 )
 
-// normalizeInterfaceAddress accepts the address shape emitted by Pangolin's
-// site configuration. Older Pangolin versions can send a bare host address;
+// normalizeInterfaceAddress accepts the address shape emitted by Praxis's
+// site configuration. Older Praxis versions can send a bare host address;
 // the client WireGuard interface needs an address/prefix pair, so treat a
 // bare IPv4 address as /32 and a bare IPv6 address as /128.
 func normalizeInterfaceAddress(raw string) (string, netip.Addr, error) {

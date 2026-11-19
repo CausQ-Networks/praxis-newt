@@ -12,9 +12,9 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/fosrl/newt/internal/state"
-	"github.com/fosrl/newt/internal/telemetry"
-	"github.com/fosrl/newt/logger"
+	"github.com/CausQ-Networks/praxis-newt/internal/state"
+	"github.com/CausQ-Networks/praxis-newt/internal/telemetry"
+	"github.com/CausQ-Networks/praxis-newt/logger"
 	"go.opentelemetry.io/otel/attribute"
 	"go.opentelemetry.io/otel/metric"
 	"golang.zx2c4.com/wireguard/tun/netstack"

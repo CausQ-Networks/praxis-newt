@@ -4,7 +4,7 @@ import (
 	"context"
 	"time"
 
-	"github.com/fosrl/newt/logger"
+	"github.com/CausQ-Networks/praxis-newt/logger"
 	"github.com/vishvananda/netlink"
 )
 

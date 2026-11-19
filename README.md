@@ -1,24 +1,24 @@
 # Newt
-[![PkgGoDev](https://pkg.go.dev/badge/github.com/fosrl/newt)](https://pkg.go.dev/github.com/fosrl/newt)
-[![GitHub License](https://img.shields.io/github/license/fosrl/newt)](https://github.com/fosrl/newt/blob/main/LICENSE)
-[![Go Report Card](https://goreportcard.com/badge/github.com/fosrl/newt)](https://goreportcard.com/report/github.com/fosrl/newt)
+[![PkgGoDev](https://pkg.go.dev/badge/github.com/CausQ-Networks/praxis-newt)](https://pkg.go.dev/github.com/CausQ-Networks/praxis-newt)
+[![GitHub License](https://img.shields.io/github/license/causq-networks/praxis-newt)](https://github.com/CausQ-Networks/praxis-newt/blob/main/LICENSE)
+[![Go Report Card](https://goreportcard.com/badge/github.com/CausQ-Networks/praxis-newt)](https://goreportcard.com/report/github.com/CausQ-Networks/praxis-newt)
 
 > [!NOTE]
-> Newt is being phased out in favor of the [Pangolin CLI](https://github.com/fosrl/cli). Use `pangolin up site`
+> Newt is being phased out in favor of the [Praxis CLI](https://github.com/CausQ-Networks/praxis-cli). Use `praxis up site`
 
-Newt is a fully user space [WireGuard](https://www.wireguard.com/) tunnel client and TCP/UDP proxy, designed to securely expose private resources controlled by Pangolin. By using Newt, you don't need to manage complex WireGuard tunnels and NATing.
+Newt is a fully user space [WireGuard](https://www.wireguard.com/) tunnel client and TCP/UDP proxy, designed to securely expose private resources controlled by Praxis. By using Newt, you don't need to manage complex WireGuard tunnels and NATing.
 
 ### Installation and Documentation
 
-Newt is used with Pangolin and Gerbil as part of the larger system. See documentation below:
+Newt is used with Praxis and Gerbil as part of the larger system. See documentation below:
 
--   [Full Documentation](https://docs.pangolin.net/manage/sites/understanding-sites)
+-   [Full Documentation](https://docs.praxis.causq.com/manage/sites/understanding-sites)
 
 ## Key Functions
 
-### Registers with Pangolin
+### Registers with Praxis
 
-Using the Newt ID and a secret, the client will make HTTP requests to Pangolin to receive a session token. Using that token, it will connect to a websocket and maintain that connection. Control messages will be sent over the websocket.
+Using the Newt ID and a secret, the client will make HTTP requests to Praxis to receive a session token. Using that token, it will connect to a websocket and maintain that connection. Control messages will be sent over the websocket.
 
 ### Receives WireGuard Control Messages
 

@@ -1,5 +1,5 @@
 {
-  description = "newt - A tunneling client for Pangolin";
+  description = "newt - A tunneling client for Praxis";
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
@@ -58,8 +58,8 @@
             versionCheckProgramArg = [ "-version" ];
 
             meta = {
-              description = "A tunneling client for Pangolin";
-              homepage = "https://github.com/fosrl/newt";
+              description = "A tunneling client for Praxis";
+              homepage = "https://github.com/CausQ-Networks/praxis-newt";
               license = lib.licenses.gpl3;
               maintainers = [
                 lib.maintainers.water-sucks

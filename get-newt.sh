@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # Get Newt - Cross-platform installation script
-# Usage: curl -fsSL https://raw.githubusercontent.com/fosrl/newt/refs/heads/main/get-newt.sh | sh
+# Usage: curl -fsSL https://raw.githubusercontent.com/causq-networks/praxis-newt/refs/heads/main/get-newt.sh | sh
 
 set -e
 
@@ -12,7 +12,7 @@ YELLOW='\033[1;33m'
 NC='\033[0m' # No Color
 
 # GitHub repository info
-REPO="fosrl/newt"
+REPO="causq-networks/praxis-newt"
 GITHUB_API_URL="https://api.github.com/repos/${REPO}/releases/latest"
 
 # Function to print colored output

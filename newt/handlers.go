@@ -13,17 +13,17 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/fosrl/newt/authdaemon"
-	"github.com/fosrl/newt/browsergateway"
-	"github.com/fosrl/newt/docker"
-	"github.com/fosrl/newt/exitnode"
-	"github.com/fosrl/newt/healthcheck"
-	"github.com/fosrl/newt/internal/state"
-	"github.com/fosrl/newt/internal/telemetry"
-	"github.com/fosrl/newt/logger"
-	"github.com/fosrl/newt/network"
-	"github.com/fosrl/newt/util"
-	"github.com/fosrl/newt/websocket"
+	"github.com/CausQ-Networks/praxis-newt/authdaemon"
+	"github.com/CausQ-Networks/praxis-newt/browsergateway"
+	"github.com/CausQ-Networks/praxis-newt/docker"
+	"github.com/CausQ-Networks/praxis-newt/exitnode"
+	"github.com/CausQ-Networks/praxis-newt/healthcheck"
+	"github.com/CausQ-Networks/praxis-newt/internal/state"
+	"github.com/CausQ-Networks/praxis-newt/internal/telemetry"
+	"github.com/CausQ-Networks/praxis-newt/logger"
+	"github.com/CausQ-Networks/praxis-newt/network"
+	"github.com/CausQ-Networks/praxis-newt/util"
+	"github.com/CausQ-Networks/praxis-newt/websocket"
 )
 
 const (
@@ -915,7 +915,7 @@ func (n *Newt) registerHandlers(ctx context.Context) {
 		}
 
 		bcChainId := generateChainId()
-		// Pangolin intentionally does not answer backwards-compatible
+		// Praxis intentionally does not answer backwards-compatible
 		// registrations with newt/wg/connect. Do not replace the chain ID of
 		// the real registration while its response may already be in flight.
 		if err := n.client.SendMessage(topicWGRegister, map[string]interface{}{

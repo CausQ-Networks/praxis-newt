@@ -7,8 +7,8 @@ import (
 	"os/exec"
 	"strings"
 
-	"github.com/fosrl/newt/logger"
-	"github.com/fosrl/newt/proxy"
+	"github.com/CausQ-Networks/praxis-newt/logger"
+	"github.com/CausQ-Networks/praxis-newt/proxy"
 )
 
 func parseTargetData(data interface{}) (TargetData, error) {

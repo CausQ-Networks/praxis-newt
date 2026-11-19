@@ -9,7 +9,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/fosrl/newt/healthcheck"
+	"github.com/CausQ-Networks/praxis-newt/healthcheck"
 )
 
 func TestWatchBlueprintFile_WriteTriggersSend(t *testing.T) {
@@ -344,7 +344,7 @@ func TestParseTargetStringNetDialCompatibility(t *testing.T) {
 	}
 }
 
-// TestPingNilNetstackReturnsError is the regression guard for fosrl/newt#439:
+// TestPingNilNetstackReturnsError is the regression guard for causq-networks/praxis-newt#439:
 // a still-running ping goroutine calling ping() with a nil *netstack.Net
 // (after closeWgTunnel clears it during teardown/reconnect) must return an
 // error instead of panicking with a nil pointer dereference.
@@ -422,7 +422,7 @@ func TestApplyWgDataKeepsExistingDataOnDecodeError(t *testing.T) {
 
 // TestShouldFireRecovery is the regression guard for the broken trigger gate
 // that prevented data-plane recovery from ever firing under default settings
-// (fosrl/newt#284, #310, pangolin#1004).
+// (causq-networks/praxis-newt#284, #310, pangolin#1004).
 func TestShouldFireRecovery(t *testing.T) {
 	const threshold = 4
 	cases := []struct {

@@ -3,9 +3,9 @@ package newt
 import (
 	"fmt"
 
-	"github.com/fosrl/newt/logger"
-	"github.com/fosrl/newt/network"
-	"github.com/fosrl/newt/util"
+	"github.com/CausQ-Networks/praxis-newt/logger"
+	"github.com/CausQ-Networks/praxis-newt/network"
+	"github.com/CausQ-Networks/praxis-newt/util"
 )
 
 // updateRemoteExitNodeSubnets replaces the set of active remote exit node

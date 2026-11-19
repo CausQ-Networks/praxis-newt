@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/fosrl/newt/authdaemon"
+	"github.com/CausQ-Networks/praxis-newt/authdaemon"
 )
 
 const (

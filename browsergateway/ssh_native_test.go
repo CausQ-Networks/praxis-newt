@@ -21,7 +21,7 @@ import (
 	"time"
 
 	"github.com/coder/websocket"
-	"github.com/fosrl/newt/nativessh"
+	"github.com/CausQ-Networks/praxis-newt/nativessh"
 	"golang.org/x/crypto/ssh"
 )
 

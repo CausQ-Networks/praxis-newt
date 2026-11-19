@@ -5,12 +5,12 @@ import (
 	"net/netip"
 	"sync"
 
-	"github.com/fosrl/newt/logger"
+	"github.com/CausQ-Networks/praxis-newt/logger"
 )
 
 // Header names match the defaults that Badger sets for resources behind
 // Traefik, so downstream services see the same identity headers regardless of
-// whether a request came through Pangolin's public proxy or through newt.
+// whether a request came through Praxis's public proxy or through newt.
 const (
 	remoteUserIDHeader = "Remote-User-Id"
 	remoteUserHeader   = "Remote-User"

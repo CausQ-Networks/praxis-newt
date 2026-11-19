@@ -6,8 +6,8 @@ import (
 	"os"
 	"runtime"
 
-	"github.com/fosrl/newt/authdaemon"
-	"github.com/fosrl/newt/logger"
+	"github.com/CausQ-Networks/praxis-newt/authdaemon"
+	"github.com/CausQ-Networks/praxis-newt/logger"
 )
 
 const (

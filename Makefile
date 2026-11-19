@@ -12,7 +12,7 @@ test:
 	go test ./...
 
 docker-build:
-	docker build -t fosrl/newt:latest .
+	docker build -t causq-networks/praxis-newt:latest .
 
 docker-build-release:
 	@if [ -z "$(tag)" ]; then \
@@ -21,8 +21,8 @@ docker-build-release:
 	fi
 	docker buildx build . \
 		--platform linux/arm/v7,linux/arm64,linux/amd64 \
-		-t fosrl/newt:latest \
-		-t fosrl/newt:$(tag) \
+		-t causq-networks/praxis-newt:latest \
+		-t causq-networks/praxis-newt:$(tag) \
 		-f Dockerfile \
 		--push
 

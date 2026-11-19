@@ -7,7 +7,7 @@ import (
 	"net"
 	"net/netip"
 
-	"github.com/fosrl/newt/logger"
+	"github.com/CausQ-Networks/praxis-newt/logger"
 	"golang.zx2c4.com/wireguard/windows/tunnel/winipcfg"
 )
 

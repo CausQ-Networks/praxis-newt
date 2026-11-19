@@ -8,8 +8,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/fosrl/newt/logger"
-	"github.com/fosrl/newt/netstack2"
+	"github.com/CausQ-Networks/praxis-newt/logger"
+	"github.com/CausQ-Networks/praxis-newt/netstack2"
 	"gvisor.dev/gvisor/pkg/tcpip/adapters/gonet"
 )
 

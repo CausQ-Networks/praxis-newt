@@ -9,7 +9,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/fosrl/newt/logger"
+	"github.com/CausQ-Networks/praxis-newt/logger"
 )
 
 // ExitNodeData is the payload the server sends in response to a

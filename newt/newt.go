@@ -8,17 +8,17 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/fosrl/newt/authdaemon"
-	"github.com/fosrl/newt/browsergateway"
-	wgclients "github.com/fosrl/newt/clients"
-	"github.com/fosrl/newt/docker"
-	"github.com/fosrl/newt/healthcheck"
-	"github.com/fosrl/newt/internal/telemetry"
-	"github.com/fosrl/newt/logger"
-	"github.com/fosrl/newt/nativessh"
-	"github.com/fosrl/newt/proxy"
-	"github.com/fosrl/newt/util"
-	"github.com/fosrl/newt/websocket"
+	"github.com/CausQ-Networks/praxis-newt/authdaemon"
+	"github.com/CausQ-Networks/praxis-newt/browsergateway"
+	wgclients "github.com/CausQ-Networks/praxis-newt/clients"
+	"github.com/CausQ-Networks/praxis-newt/docker"
+	"github.com/CausQ-Networks/praxis-newt/healthcheck"
+	"github.com/CausQ-Networks/praxis-newt/internal/telemetry"
+	"github.com/CausQ-Networks/praxis-newt/logger"
+	"github.com/CausQ-Networks/praxis-newt/nativessh"
+	"github.com/CausQ-Networks/praxis-newt/proxy"
+	"github.com/CausQ-Networks/praxis-newt/util"
+	"github.com/CausQ-Networks/praxis-newt/websocket"
 	"golang.zx2c4.com/wireguard/device"
 	wtun "golang.zx2c4.com/wireguard/tun"
 	"golang.zx2c4.com/wireguard/tun/netstack"
@@ -89,7 +89,7 @@ func Init(ctx context.Context, cfg Config) (*Newt, error) {
 	// Metric-recording calls throughout the websocket/proxy/tunnel code are
 	// unconditional, not gated on cfg.MetricsEnabled, so the instruments
 	// must exist even when the caller never sets up telemetry exporters
-	// (e.g. an embedder that only calls Init/Start, like the Pangolin CLI).
+	// (e.g. an embedder that only calls Init/Start, like the Praxis CLI).
 	if err := telemetry.EnsureInstruments(); err != nil {
 		return nil, fmt.Errorf("failed to initialize telemetry instruments: %w", err)
 	}

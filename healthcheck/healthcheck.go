@@ -12,7 +12,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/fosrl/newt/logger"
+	"github.com/CausQ-Networks/praxis-newt/logger"
 )
 
 // Health represents the health status of a target

@@ -15,7 +15,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/fosrl/newt/logger"
+	"github.com/CausQ-Networks/praxis-newt/logger"
 )
 
 // writeCACertIfNotExists writes contents to path. If the file already exists: when force is false, skip; when force is true, overwrite only if content differs.
@@ -312,7 +312,7 @@ func writeSudoersFile(username, content string) error {
 
 // configurePasswordlessSudo creates a sudoers.d file to allow passwordless sudo for the user.
 func configurePasswordlessSudo(username string) error {
-	content := fmt.Sprintf("# Created by Pangolin auth-daemon\n%s ALL=(ALL) NOPASSWD:ALL\n", username)
+	content := fmt.Sprintf("# Created by Praxis auth-daemon\n%s ALL=(ALL) NOPASSWD:ALL\n", username)
 	if err := writeSudoersFile(username, content); err != nil {
 		return err
 	}
@@ -324,7 +324,7 @@ func configurePasswordlessSudo(username string) error {
 // Each command should be a full path (e.g. /usr/bin/systemctl).
 func configureSudoCommands(username string, commands []string) error {
 	var b strings.Builder
-	b.WriteString("# Created by Pangolin auth-daemon (restricted commands)\n")
+	b.WriteString("# Created by Praxis auth-daemon (restricted commands)\n")
 	n := 0
 	for _, c := range commands {
 		c = strings.TrimSpace(c)

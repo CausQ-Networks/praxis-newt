@@ -13,7 +13,7 @@ import (
 	"syscall"
 
 	"github.com/creack/pty"
-	"github.com/fosrl/newt/logger"
+	"github.com/CausQ-Networks/praxis-newt/logger"
 )
 
 // NewPTYSessionAs spawns an interactive shell in a PTY running as the given

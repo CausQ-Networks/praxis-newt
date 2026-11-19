@@ -11,8 +11,8 @@ import (
 	"time"
 
 	"github.com/coder/websocket"
-	"github.com/fosrl/newt/logger"
-	"github.com/fosrl/newt/nativessh"
+	"github.com/CausQ-Networks/praxis-newt/logger"
+	"github.com/CausQ-Networks/praxis-newt/nativessh"
 	"golang.org/x/crypto/ssh"
 )
 
@@ -122,7 +122,7 @@ type nativeSSHConn struct {
 // browserSourceAddr returns the address of the browser behind the reverse
 // proxy when it reported one, falling back to the proxy's own address. The
 // gateway only listens inside the tunnel, so the header comes from the
-// Pangolin side, not the browser.
+// Praxis side, not the browser.
 func browserSourceAddr(r *http.Request) string {
 	if ip := strings.TrimSpace(r.Header.Get("X-Real-Ip")); ip != "" && net.ParseIP(ip) != nil {
 		return ip

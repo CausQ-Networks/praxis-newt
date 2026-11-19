@@ -12,13 +12,13 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/fosrl/newt/clients/permissions"
-	"github.com/fosrl/newt/internal/telemetry"
-	"github.com/fosrl/newt/logger"
-	newtpkg "github.com/fosrl/newt/newt"
-	"github.com/fosrl/newt/newtconfig"
-	"github.com/fosrl/newt/updates"
-	"github.com/fosrl/newt/websocket"
+	"github.com/CausQ-Networks/praxis-newt/clients/permissions"
+	"github.com/CausQ-Networks/praxis-newt/internal/telemetry"
+	"github.com/CausQ-Networks/praxis-newt/logger"
+	newtpkg "github.com/CausQ-Networks/praxis-newt/newt"
+	"github.com/CausQ-Networks/praxis-newt/newtconfig"
+	"github.com/CausQ-Networks/praxis-newt/updates"
+	"github.com/CausQ-Networks/praxis-newt/websocket"
 	"go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp"
 )
 

@@ -91,7 +91,7 @@ func CheckForUpdate(owner, repo, currentVersion string) error {
 	_ = owner
 
 	// Versions API URL
-	url := "https://api.fossorial.io/api/v1/versions"
+	url := "https://api.github.com/repos/CausQ-Networks/praxis-cli/api/v1/versions"
 
 	// Create HTTP client with timeout
 	client := &http.Client{
@@ -133,7 +133,7 @@ func CheckForUpdate(owner, repo, currentVersion string) error {
 
 	// Check if update is available
 	if currentVer.isNewer(latestVer) {
-		printUpdateBanner(currentVer.String(), latestVer.String(), "curl -fsSL https://static.pangolin.net/get-newt.sh | bash")
+		printUpdateBanner(currentVer.String(), latestVer.String(), "curl -fsSL https://praxis.causq.com/get-newt.sh | bash")
 	}
 
 	return nil

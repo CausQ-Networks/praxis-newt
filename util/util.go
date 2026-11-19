@@ -11,7 +11,7 @@ import (
 
 	mathrand "math/rand/v2"
 
-	"github.com/fosrl/newt/logger"
+	"github.com/CausQ-Networks/praxis-newt/logger"
 	"golang.zx2c4.com/wireguard/device"
 )
 
@@ -47,7 +47,7 @@ func splitDomainHostPort(domain string) (host, port string, literalIP net.IP) {
 // commonly hand out IPv6-only resolvers) - this falls back to the platform's
 // own resolver, which routes independently of our socket path and reliably
 // works even then. See https://github.com/fosrl/android/issues/42 and
-// https://github.com/fosrl/pangolin/issues/3471.
+// https://github.com/CausQ-Networks/praxis/issues/3471.
 func resolveIPs(host string, publicDNS []string) ([]net.IP, error) {
 	if len(publicDNS) == 0 {
 		return net.LookupIP(host)
@@ -135,7 +135,7 @@ func ResolveDomain(domain string) (string, error) {
 // address family the local network path actually has a route for, instead of
 // always preferring an IPv4 address that may be completely unreachable (e.g.
 // on an IPv6-only/NAT64 network). See
-// https://github.com/fosrl/olm/issues/108.
+// https://github.com/CausQ-Networks/praxis-olm/issues/108.
 func ResolveDomainAllUpstream(domain string, publicDNS []string) ([]string, error) {
 	host, port, literalIP := splitDomainHostPort(domain)
 	if literalIP != nil {

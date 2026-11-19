@@ -8,8 +8,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/fosrl/newt/internal/telemetry"
-	"github.com/fosrl/newt/logger"
+	"github.com/CausQ-Networks/praxis-newt/internal/telemetry"
+	"github.com/CausQ-Networks/praxis-newt/logger"
 	"golang.zx2c4.com/wireguard/tun/netstack"
 )
 

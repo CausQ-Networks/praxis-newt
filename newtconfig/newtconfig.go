@@ -1,7 +1,7 @@
 // Package newtconfig resolves Newt's runtime configuration (CLI flags, env
 // vars, and config file) into a newt.Config. It is the same logic used by
 // the newt binary's entrypoint, factored out so other programs (such as the
-// Pangolin CLI, which embeds Newt as a library) can load configuration the
+// Praxis CLI, which embeds Newt as a library) can load configuration the
 // exact same way, from an explicit argument list rather than the process's
 // global os.Args/flag.CommandLine.
 package newtconfig
@@ -17,8 +17,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/fosrl/newt/logger"
-	newtpkg "github.com/fosrl/newt/newt"
+	"github.com/CausQ-Networks/praxis-newt/logger"
+	newtpkg "github.com/CausQ-Networks/praxis-newt/newt"
 )
 
 type stringSlice []string
@@ -106,7 +106,7 @@ type fileSettings struct {
 //
 // defaultConfigFile, when non-empty, overrides the standalone newt-client OS
 // default below - it lets a caller that embeds newtconfig as a library (such
-// as the Pangolin CLI) point new installs at its own config directory
+// as the Praxis CLI) point new installs at its own config directory
 // instead of newt's, while --config-file/CONFIG_FILE still take precedence.
 func resolveConfigFilePath(args []string, defaultConfigFile string) string {
 	for i, a := range args {
@@ -300,7 +300,7 @@ type Options struct {
 	// neither --config-file nor CONFIG_FILE is set. Leave empty to use the
 	// standalone newt binary's own default (e.g.
 	// ~/.config/newt-client/config.json on Linux); callers embedding
-	// newtconfig as a library (such as the Pangolin CLI) should set this to
+	// newtconfig as a library (such as the Praxis CLI) should set this to
 	// a path under their own config directory instead.
 	DefaultConfigFile string
 }
@@ -329,8 +329,8 @@ func Load(opts Options) (newtpkg.Config, error) {
 
 		DNS:                      "9.9.9.9",
 		LogLevel:                 "INFO",
-		InterfaceName:            "pangolin",
-		NativeMainInterfaceName:  "pangolin",
+		InterfaceName:            "praxis",
+		NativeMainInterfaceName:  "praxis",
 		AuthDaemonPrincipalsFile: "/var/run/auth-daemon/principals",
 		AuthDaemonCACertPath:     "/etc/ssh/ca.pem",
 		AdminAddr:                "127.0.0.1:2112",
@@ -413,10 +413,10 @@ func Load(opts Options) (newtpkg.Config, error) {
 	}
 
 	// ---- layer 2: environment variables ----
-	applyEnvStr(&cfg.Endpoint, "PANGOLIN_ENDPOINT", "endpoint", sources)
+	applyEnvStrAlias(&cfg.Endpoint, "PRAXIS_ENDPOINT", "PANGOLIN_ENDPOINT", "endpoint", sources)
 	// SITE_ID/SITE_SECRET are accepted as aliases for NEWT_ID/NEWT_SECRET
 	// (NEWT_ID/NEWT_SECRET win if both are set) so a site tunnel's
-	// credentials can be named consistently with other Pangolin CLI
+	// credentials can be named consistently with other Praxis CLI
 	// connection types (e.g. CLIENT_ID/CLIENT_SECRET for `up client`).
 	applyEnvStrAlias(&cfg.ID, "NEWT_ID", "SITE_ID", "id", sources)
 	applyEnvStrAlias(&cfg.Secret, "NEWT_SECRET", "SITE_SECRET", "secret", sources)
@@ -522,7 +522,7 @@ func Load(opts Options) (newtpkg.Config, error) {
 
 	fs := flag.NewFlagSet("newt", flag.ExitOnError)
 
-	fs.StringVar(&cfg.Endpoint, "endpoint", cfg.Endpoint, "Endpoint of your pangolin server")
+	fs.StringVar(&cfg.Endpoint, "endpoint", cfg.Endpoint, "Endpoint of your praxis server")
 	fs.StringVar(&cfg.ID, "id", cfg.ID, "Newt ID")
 	fs.StringVar(&cfg.Secret, "secret", cfg.Secret, "Newt secret")
 	fs.StringVar(&mtuStr, "mtu", mtuStr, "MTU to use")

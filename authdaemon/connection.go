@@ -1,7 +1,7 @@
 package authdaemon
 
 import (
-	"github.com/fosrl/newt/logger"
+	"github.com/CausQ-Networks/praxis-newt/logger"
 )
 
 // ProcessConnection runs the same logic as POST /connection: CA cert, user create/reconcile, principals.

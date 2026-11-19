@@ -16,22 +16,22 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/fosrl/newt/bind"
-	newtDevice "github.com/fosrl/newt/device"
-	"github.com/fosrl/newt/holepunch"
-	"github.com/fosrl/newt/logger"
-	"github.com/fosrl/newt/nativessh"
-	"github.com/fosrl/newt/netstack2"
-	"github.com/fosrl/newt/network"
-	"github.com/fosrl/newt/util"
-	"github.com/fosrl/newt/websocket"
-	"github.com/fosrl/newt/wgtester"
+	"github.com/CausQ-Networks/praxis-newt/bind"
+	newtDevice "github.com/CausQ-Networks/praxis-newt/device"
+	"github.com/CausQ-Networks/praxis-newt/holepunch"
+	"github.com/CausQ-Networks/praxis-newt/logger"
+	"github.com/CausQ-Networks/praxis-newt/nativessh"
+	"github.com/CausQ-Networks/praxis-newt/netstack2"
+	"github.com/CausQ-Networks/praxis-newt/network"
+	"github.com/CausQ-Networks/praxis-newt/util"
+	"github.com/CausQ-Networks/praxis-newt/websocket"
+	"github.com/CausQ-Networks/praxis-newt/wgtester"
 	"golang.zx2c4.com/wireguard/device"
 	"golang.zx2c4.com/wireguard/tun"
 	"golang.zx2c4.com/wireguard/tun/netstack"
 	"golang.zx2c4.com/wireguard/wgctrl/wgtypes"
 
-	"github.com/fosrl/newt/internal/telemetry"
+	"github.com/CausQ-Networks/praxis-newt/internal/telemetry"
 )
 
 type WgConfig struct {

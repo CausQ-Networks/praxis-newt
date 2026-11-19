@@ -16,7 +16,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/fosrl/newt/logger"
+	"github.com/CausQ-Networks/praxis-newt/logger"
 )
 
 // getConfigPath returns the resolved config/credentials file path. Path

@@ -6,7 +6,7 @@ import (
 	"sort"
 	"strconv"
 
-	"github.com/fosrl/newt/logger"
+	"github.com/CausQ-Networks/praxis-newt/logger"
 )
 
 // Interface name patterns used to rank candidate local endpoints. Interfaces
