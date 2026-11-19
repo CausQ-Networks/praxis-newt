@@ -4,10 +4,10 @@ pkgver=1.13.0
 pkgrel=1
 pkgdesc="Fully user space WireGuard tunnel client and TCP/UDP proxy for Pangolin"
 arch=('x86_64' 'aarch64' 'armv7h' 'armv6h' 'riscv64')
-url="https://github.com/fosrl/newt"
+url="https://github.com/causq-networks/praxis-newt"
 license=('AGPL3')
 makedepends=('go')
-source=("$pkgname-$pkgver.tar.gz::https://github.com/fosrl/newt/archive/refs/tags/v$pkgver.tar.gz")
+source=("$pkgname-$pkgver.tar.gz::https://github.com/causq-networks/praxis-newt/archive/refs/tags/v$pkgver.tar.gz")
 sha256sums=('SKIP')
 
 build() {
