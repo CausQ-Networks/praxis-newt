@@ -1,4 +1,6 @@
 # Newt
+
+[![Discord](https://img.shields.io/discord/1572896060949659679?logo=discord&style=flat-square&label=Discord)](https://praxis.causq.com/discord/)
 [![PkgGoDev](https://pkg.go.dev/badge/github.com/CausQ-Networks/praxis-newt)](https://pkg.go.dev/github.com/CausQ-Networks/praxis-newt)
 [![GitHub License](https://img.shields.io/github/license/causq-networks/praxis-newt)](https://github.com/CausQ-Networks/praxis-newt/blob/main/LICENSE)
 [![Go Report Card](https://goreportcard.com/badge/github.com/CausQ-Networks/praxis-newt)](https://goreportcard.com/report/github.com/CausQ-Networks/praxis-newt)
