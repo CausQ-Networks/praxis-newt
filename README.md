@@ -1,5 +1,14 @@
 # Newt
 
+<div align="center">
+  <a href="https://praxis.causq.com/">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/CausQ-Networks/praxis/main/public/logo/praxis-logo-white.png">
+      <img alt="Praxis Logo" src="https://raw.githubusercontent.com/CausQ-Networks/praxis/main/public/logo/praxis-logo.png" width="280">
+    </picture>
+  </a>
+</div>
+
 [![Discord](https://img.shields.io/discord/1572896060949659679?logo=discord&style=flat-square&label=Discord)](https://praxis.causq.com/discord/)
 [![PkgGoDev](https://pkg.go.dev/badge/github.com/CausQ-Networks/praxis-newt)](https://pkg.go.dev/github.com/CausQ-Networks/praxis-newt)
 [![GitHub License](https://img.shields.io/github/license/causq-networks/praxis-newt)](https://github.com/CausQ-Networks/praxis-newt/blob/main/LICENSE)
@@ -14,7 +23,7 @@ Newt is a fully user space [WireGuard](https://www.wireguard.com/) tunnel client
 
 Newt is used with Praxis and Gerbil as part of the larger system. See documentation below:
 
--   [Full Documentation](https://docs.praxis.causq.com/manage/sites/understanding-sites)
+-   [Full Documentation](https://docs-praxis.causq.com/manage/sites/understanding-sites)
 
 ## Key Functions
 
